@@ -29,35 +29,32 @@ function resetPage() {
   window.getSelection().removeAllRanges();
   textarea.className = "";
 }
+function displayCode(code, button) {
+  code.style.display = "block";
+  button.className = "clicked";
+}
 
 // EVENT LISTENERS
 click.addEventListener("click", function() {
-  clickCode.style.display = "block";
-  click.className = "clicked";
+  displayCode(clickCode, click);
 });
 dblclick.addEventListener("dblclick", function() {
-  dblclickCode.style.display = "block";
-  dblclick.className = "clicked";
+  displayCode(dblclickCode, dblclick);
 });
 contextmenu.addEventListener("contextmenu", function(e) {
-  contextmenuCode.style.display = "block";
+  displayCode(contextmenuCode, contextmenu);
   e.preventDefault();
-  contextmenu.className = "clicked";
 });
 mouseover.addEventListener("mouseover", function() {
-  mouseoverCode.style.display = "block";
-  mouseover.className = "clicked";
+  displayCode(mouseoverCode, mouseover);
 });
 mouseleave.addEventListener("mouseleave", function() {
-  mouseleaveCode.style.display = "block";
-  mouseleave.className = "clicked";
+  displayCode(mouseleaveCode, mouseleave);
 });
 wheel.addEventListener("wheel", function() {
-  wheelCode.style.display = "block";
-  wheel.className = "clicked";
+  displayCode(wheelCode, wheel);
 });
 select.addEventListener("select", function() {
-  selectCode.style.display = "block";
-  select.className = "clicked";
+  displayCode(selectCode, select);
 });
 reset.addEventListener("click", resetPage);
