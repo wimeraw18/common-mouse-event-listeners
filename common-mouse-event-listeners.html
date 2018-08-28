@@ -14,7 +14,7 @@
 <body>
     <h1>Common Mouse Event Listeners</h1>
     <div class="event-listeners">
-        <button class="click">Click Here</button>
+        <button id="click">Click Here</button>
         <pre>
             <code id="click-code">
 const click = document.querySelector(".click");a
@@ -24,7 +24,7 @@ click.addEventListener("click", function() {
 });
             </code>
         </pre>
-        <button class="dblclick">Double Click Here</button>
+        <button id="dblclick">Double Click Here</button>
         <pre>
             <code id="dblclick-code">
 const dblclick = document.querySelector(".dblclick");
@@ -34,7 +34,7 @@ dblclick.addEventListener("dblclick", function() {
 });
             </code>
         </pre>
-        <button class="contextmenu">Right Click Here</button>
+        <button id="contextmenu">Right Click Here</button>
         <pre>
             <code id="contextmenu-code">
 const contextmenu = document.querySelector(".contextmenu");
@@ -45,7 +45,7 @@ contextmenu.addEventListener("contextmenu", function(e) {
 });
             </code>
         </pre>
-        <button class="mouseover">Move Mouse Over Here</button>
+        <button id="mouseover">Move Mouse Over Here</button>
         <pre>
             <code id="mouseover-code">
 const mouseover = document.querySelector(".mouseover");
@@ -55,7 +55,7 @@ mouseover.addEventListener("mouseover", function() {
 });
             </code>
         </pre>
-        <button class="mouseleave">Move Mouse Here and Leave</button>
+        <button id="mouseleave">Move Mouse Here and Leave</button>
         <pre>
             <code id="mouseleave-code">
 const mouseleave = document.querySelector(".mouseleave");
@@ -65,7 +65,7 @@ mouseleave.addEventListener("mouseleave", function() {
 });
             </code>
         </pre>
-        <button class="wheel">Scroll the Mouse Wheel Here</button>
+        <button id="wheel">Scroll the Mouse Wheel Here</button>
         <pre>
             <code id="wheel-code">
 const wheel = document.querySelector(".wheel");
@@ -75,7 +75,7 @@ wheel.addEventListener("wheel", function() {
 });
             </code>
         </pre>
-        <textarea class="select">Select this text</textarea>
+        <textarea id="select">Select this text</textarea>
         <pre>
             <code id="select-code">
 const select = document.querySelector(".select");
@@ -85,7 +85,7 @@ select.addEventListener("select", function() {
 });
             </code>
         </pre>
-        <button class="reset">Reset All</button>
+        <button id="reset">Reset All</button>
     </div>
     <script src="common-mouse-event-listeners-scripts.js"></script>
 </body>
