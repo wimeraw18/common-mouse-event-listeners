@@ -16,12 +16,14 @@
     color: white;
   }
 }
+
 /* ELEMENT SELECTORS */
 h1 {
   margin: 5% 0px;
   text-align: center;
   font-family: "Prata", serif;
 }
+
 button {
   background-color: #345f99;
   border: 1px solid darkblue;
@@ -29,10 +31,7 @@ button {
   font-size: 1.25rem;
   cursor: pointer;
 }
-button:last-of-type {
-  background-color: #993436;
-  border: 1px solid darkred;
-}
+
 button,
 textarea {
   display: block;
@@ -42,6 +41,7 @@ textarea {
   padding: 25px;
   font-family: "Lato", sans-serif;
 }
+
 code {
   display: none;
   background: black;
@@ -63,9 +63,16 @@ pre {
   justify-content: center;
   align-items: center;
 }
+
 textarea {
   background-color: white;
   border: 1px solid darkblue;
+}
+
+/* ID SELECTORS */
+#reset {
+  background-color: #993436;
+  border: 1px solid darkred;
 }
 
 /* CLASS SELECTORS */
@@ -81,14 +88,34 @@ textarea {
   color: yellow;
   box-shadow: 0px 0px 5px 0px black;
 }
+
 /* HOVER RULES */
+button:not(:last-of-type):hover {
+  background-color: black;
+  color: yellow;
+  box-shadow: 0px 0px 5px 0px black;
+}
+
 .clicked:hover {
   background-color: black;
   color: yellow;
   box-shadow: 0px 0px 5px 0px black;
 }
+
 button:hover {
   background-color: black;
   color: yellow;
   box-shadow: 0px 0px 5px 0px black;
+}
+
+#reset:hover {
+  background-color: #d00000;
+  box-shadow: 0px 0px 5px 0px black;
+  font-size: 1.25rem;
+  z-index: 100;
+  color: white;
+}
+
+textarea:hover {
+  box-shadow: 0px 0px 5px black;
 }
