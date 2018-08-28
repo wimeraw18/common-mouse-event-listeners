@@ -5,6 +5,17 @@
   background-color: #c2dfff;
 }
 
+/* ANIMATIONS */
+@keyframes reveal {
+  from {
+    font-size: 0rem;
+    color: black;
+  }
+  to {
+    font-size: 0.9rem;
+    color: white;
+  }
+}
 /* ELEMENT SELECTORS */
 h1 {
   margin: 5% 0px;
@@ -41,6 +52,7 @@ code {
   margin-right: 0px;
   font-size: 0.9rem;
   font-family: "Source Code Pro", "Inconsolata", monospace;
+  animation: 0.4s reveal;
 }
 
 pre {
